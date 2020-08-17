@@ -2,7 +2,7 @@
 
 Ejecutar el script `iniciar.sh` 
 
-    sh iniciar.sh
+    ./iniciar.sh
 
 
 Finalizada la ejecucion del script, ejecutar todo lo relacionado con Puppet en modo root. Copiar las carpetas "modules" y "manifest" de /vagrant a /etc/puppetlabs/code/enviroment/production
