@@ -15,18 +15,21 @@ Configurar la certificacion de clientes puppet por parte de puppet master:
 
     sudo /opt/puppetlabs/bin/puppet cert sign --all
     sudo systemctl restart puppetserver.service
-
+    exit
+    
 Ahora nos dirigimos al `puppetagent1` y verificamos su funcionamiento con el puppetmaster
 
 
     vagrant ssh puppetagent1
     sudo /opt/puppetlabs/puppet/bin/puppet agent -t
-
+    exit
+    
 Por ultimo nos dirigimos al `puppetagent2` y realizamos el proceso anterior. 
 
     vagrant ssh puppetagent2
     sudo /opt/puppetlabs/puppet/bin/puppet agent -t
-
+    exit
+    
 Nos aseguramos que el despliegue de HTCondor se encuentre correctamente configurado, dirigiendonos nuevamente al `puppetagent1`
 
 
