@@ -1,0 +1,21 @@
+# Condor Master
+CONDOR_HOST = 192.168.20.21
+
+START = True
+
+#Network domain parameters:
+
+UID_DOMAIN = ciat.cgiar.org
+
+FILESYSTEM_DOMAIN =   ciat.cgiar.org
+
+DAEMON_LIST = COLLECTOR, MASTER, NEGOTIATOR,SCHEDD,SHARED_PORT
+
+# Equipos que pueden enviar tareas
+
+ALLOW_WRITE= *
+
+ALLOW_READ= *
+
+PRIVATE_NETWORK_NAME = ciat.cgiar.org
+

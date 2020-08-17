@@ -1,0 +1,51 @@
+# Condor Master
+
+CONDOR_HOST = 192.168.20.21
+
+# User ID Domain
+
+UID_DOMAIN = ciat.cgiar.org
+
+# Filesystem Domain
+
+FILESYSTEM_DOMAIN = ciat.cgiar.org
+
+# Deshabilitar uso de Swap / Disable Swap use.
+
+RESERVED_SWAP = 0
+
+# Condor Worker
+
+DAEMON_LIST = MASTER,STARTD
+
+# Allowed computers / Equipos permitidos
+
+ALLOW_WRITE = *
+
+
+# Create only 1 Slot / Crear solo 1 Slot
+
+NUM_SLOTS = 1
+
+# Slot resources: 100% / Recursos del Slot: 100%
+
+SLOT_TYPE_1 = cpu=100%, ram=100%, swap=100%, disk=95%
+
+# Enable dynamic resources in Slot1 / Habilitar recursos dinamicos en Slot1
+
+SLOT_TYPE_1_PARTITIONABLE = True
+
+# Create Slot / Crear Slot
+
+NUM_SLOTS_TYPE_1 = 1
+
+# Default Memory if none is requiered 1024MB
+
+MODIFY_REQUEST_EXPR_REQUESTMEMORY = quantize(RequestMemory, {1024})
+
+# Red LAN
+
+PRIVATE_NETWORK_NAME = ciat.cgiar.org
+
+#IP a usar (Esta informacion la completa el script add_ip.sh)
+

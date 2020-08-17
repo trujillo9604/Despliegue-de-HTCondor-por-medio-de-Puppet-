@@ -1,0 +1,18 @@
+                                            
+  # 
+  # Example 1                                                            
+  # Simple condor job description file                                    
+  #                                                                       
+  ####################                                                    
+ should_transfer_files = YES
+                                                                           
+ executable   = run.sh                                                    
+ universe     = vanilla                                                   
+ output       = out.txt
+ error        = error.txt
+ log          = log.txt
+
+
+ when_to_transfer_output = ON_EXIT                                                   
+  Queue 3
+
